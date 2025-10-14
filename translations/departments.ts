@@ -60,6 +60,14 @@ export const departmentsTranslations = {
     mr: "समाज कल्याण विभाग",
     en: "Social Welfare Department",
   },
+  "dept.Village_Revenue_Officer": {
+    mr: "ग्राममहसूल अधिकारी ",
+    en: "Village Revenue Officer",
+  },
+  "dept.Village_Revenue_Officer_des": {
+    mr: "गावातील भू-अभिलेख, कर संकलन व मालमत्ता सेवा यांची जबाबदारी. ",
+    en: "Responsible for land records, tax collection, and property-related services in the village",
+  },
 
   // Agriculture Department
   "agri.subtitle": {
@@ -397,6 +405,14 @@ export const departmentsTranslations = {
     en: "Primary School",
   },
   "edu.library": {
+    mr: "ग्रंथालय",
+    en: "Library",
+  },
+  "edu.departmentHead": {
+    mr: "ग्रंथालय",
+    en: "Library",
+  },
+  "edu.departmentHeadPhone": {
     mr: "ग्रंथालय",
     en: "Library",
   },
@@ -746,9 +762,21 @@ export const departmentsTranslations = {
     mr: "विभाग",
     en: "Departments",
   },
+  "dept.departmentHeadtitle": {
+    mr: "विभागप्रमुख",
+    en: "Department Head",
+  },
   "dept.agriculture.name": {
     mr: "कृषी विभाग",
     en: "Agriculture Department",
+  },
+  "dept.agriculture.departmentHead": {
+    mr: "श्री. गणेश शेळके",
+    en: "Mr. Ganesh Shelke",
+  },
+  "dept.agriculture.departmentHeadPhone": {
+    mr: "८६००४२५३७०",
+    en: "8600425370",
   },
   "dept.agriculture.fullDesc": {
     mr: "शेती सुधारणा, शेतकऱ्यांना मार्गदर्शन, बियाणे वितरण आणि शेती योजनांची माहिती",
@@ -758,6 +786,14 @@ export const departmentsTranslations = {
     mr: "आरोग्य विभाग",
     en: "Health Department",
   },
+  "dept.health.departmentHead": {
+    mr: "डॉ. सारिका पाटील",
+    en: "Dr. Sarika Patil",
+  },
+  "dept.health.departmentHeadPhone": {
+    mr: "९२८४०८०५८०",
+    en: "9284080580",
+  },
   "dept.health.fullDesc": {
     mr: "प्राथमिक आरोग्य सेवा, लसीकरण, आरोग्य शिबिरे आणि आपत्कालीन वैद्यकीय सुविधा",
     en: "Primary health services, vaccination, health camps and emergency medical facilities",
@@ -765,6 +801,14 @@ export const departmentsTranslations = {
   "dept.animal_husbandry.name": {
     mr: "पशुपालन आणि दुग्धव्यवसाय",
     en: "Animal Husbandry and Dairying",
+  },
+  "dept.animal_husbandry.departmentHead": {
+    mr: "पशु",
+    en: "Animal",
+  },
+  "dept.animal_husbandry.departmentHeadPhone": {
+    mr: "९५६१११४८११",
+    en: "9561114811",
   },
   "dept.education.fullDesc": {
     mr: "प्राथमिक शिक्षण, मध्यान्ह भोजन योजना, शिष्यवृत्ती आणि शैक्षणिक कार्यक्रम",
@@ -777,6 +821,14 @@ export const departmentsTranslations = {
   "dept.social.fullDesc": {
     mr: "पेन्शन योजना, महिला सबलीकरण, बाल कल्याण आणि दिव्यांग सहाय्य कार्यक्रम",
     en: "Pension schemes, women empowerment, child welfare and disability support programs",
+  },
+  "dept.Village_Revenue_OfficerHeadPhone": {
+    mr: "९८३४८२३१२२",
+    en: "9834823122",
+  },
+  "dept.Village_Revenue_OfficerHead": {
+    mr: "श्री. लहुदास चौधरी",
+    en: "Mr. Lahudas Chaudhari",
   },
 
   // Department Descriptions for Home Page Component
@@ -792,10 +844,10 @@ export const departmentsTranslations = {
     mr: "पशुपालन आणि दुग्धव्यवसाय",
     en: "Animal Husbandry and Dairying",
   },
-  "dept.construction.desc": {
-    mr: "ग्राममहसूल अधिकारी ",
-    en: "Village Revenue Officer",
-  },
+  // "dept.construction.desc": {
+  //   mr: "ग्राममहसूल अधिकारी ",
+  //   en: "Village Revenue Officer",
+  // },
   "dept.social.desc": {
     mr: "समाज कल्याण योजना",
     en: "Social welfare schemes",

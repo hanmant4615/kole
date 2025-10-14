@@ -55,7 +55,6 @@ export default function IntroductionPage() {
                 {t("intro.males")}: 383 | {t("intro.females")}: 345
               </p>
             </div>
-
             <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
               <div className="bg-government-green bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FaMapMarkedAlt className="text-3xl text-government-green" />
@@ -70,7 +69,6 @@ export default function IntroductionPage() {
                 {t("intro.averageSize")}: 3.4 {t("intro.members")}
               </p>
             </div>
-
             <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
               <div className="bg-[#0A1931] bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FaLeaf className="text-3xl text-government-blue" />
@@ -86,7 +84,9 @@ export default function IntroductionPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+            {/* Trophy */}
+
+            {/* <div className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
               <div className="bg-orange-600 bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <FaTrophy className="text-3xl text-orange-600" />
               </div>
@@ -99,7 +99,7 @@ export default function IntroductionPage() {
               <p className="text-xs text-gray-500 mt-2">
                 {t("intro.stateNationalLevel")}
               </p>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -123,7 +123,7 @@ export default function IntroductionPage() {
                 </div>
                 <div className="flex justify-between border-b pb-2">
                   <span className="font-semibold">{t("intro.taluka")}:</span>
-                  <span>Taluka Name</span>
+                  <span>{t("header.Taluka")}</span>
                 </div>
                 <div className="flex justify-between border-b pb-2">
                   <span className="font-semibold">{t("intro.state")}:</span>
@@ -131,7 +131,7 @@ export default function IntroductionPage() {
                 </div>
                 <div className="flex justify-between border-b pb-2">
                   <span className="font-semibold">{t("intro.pinCode")}:</span>
-                  <span>413XXX</span>
+                  <span>415409</span>
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function IntroductionPage() {
                   <span className="font-semibold">
                     {t("intro.agriculturalLandArea")}:
                   </span>
-                  <span>428 hectares (79%)</span>
+                  <span>217 hectares</span>
                 </div>
                 <div className="flex justify-between border-b pb-2">
                   <span className="font-semibold">
@@ -177,18 +177,18 @@ export default function IntroductionPage() {
               <h3 className="font-bold text-lg mb-2">{t("intro.education")}</h3>
               <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>• {t("intro.primarySchools")}: 2</li>
-                <li>• {t("intro.secondarySchool")}: 1</li>
-                <li>• {t("intro.anganwadiCenters")}: 5</li>
-                <li>• {t("intro.library")}: 1</li>
+                <li>• {t("intro.secondarySchool")}: 0</li>
+                <li>• {t("intro.anganwadiCenters")}: 1</li>
+                <li>• {t("intro.library")}: 0</li>
               </ul>
             </div>
             <div className="border-l-4 border-government-green pl-4">
               <h3 className="font-bold text-lg mb-2">{t("intro.health")}</h3>
               <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>• {t("intro.primaryHealthCenter")}: 1</li>
-                <li>• {t("intro.subCenters")}: 2</li>
-                <li>• {t("intro.privateClinics")}: 4</li>
-                <li>• {t("intro.pharmacies")}: 3</li>
+                <li>• {t("intro.subCenters")}: 0</li>
+                <li>• {t("intro.privateClinics")}: 0</li>
+                <li>• {t("intro.pharmacies")}: 0</li>
               </ul>
             </div>
             <div className="border-l-4 border-government-blue pl-4">
@@ -196,9 +196,11 @@ export default function IntroductionPage() {
                 {t("intro.connectivity")}
               </h3>
               <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
-                <li>• {t("intro.pavedRoads")}: 24 km</li>
                 <li>
-                  • {t("intro.busService")}: {t("intro.available")}
+                  • {t("intro.pavedRoads")}:{t("intro.busServiceValue")}
+                </li>
+                <li>
+                  • {t("intro.busService")}: {t("intro.Not_available")}
                 </li>
                 <li>
                   • {t("intro.internet")}: {t("intro.fiberOptic")}
@@ -212,7 +214,7 @@ export default function IntroductionPage() {
               </h3>
               <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
                 <li>
-                  • {t("intro.pipedWater")}: 98% {t("intro.coverage")}
+                  • {t("intro.pipedWater")}: 80% {t("intro.coverage")}
                 </li>
                 <li>
                   • {t("intro.toilets")}: 100% {t("intro.households")}
@@ -242,20 +244,11 @@ export default function IntroductionPage() {
                 </li>
               </ul>
             </div>
-            <div className="border-l-4 border-yellow-500 pl-4">
-              <h3 className="font-bold text-lg mb-2">{t("intro.other")}</h3>
-              <ul className="space-y-1 text-gray-700 text-sm sm:text-base">
-                <li>• {t("intro.communityHall")}: 1</li>
-                <li>• {t("intro.sportsGround")}: 1</li>
-                <li>• {t("intro.bankBranch")}: 1</li>
-                <li>• {t("intro.postOffice")}: 1</li>
-              </ul>
-            </div>
           </div>
         </section>
 
         {/* Economy */}
-        <section className="bg-[#B3CFE5] text-[#0A1931] rounded-lg p-6 sm:p-8">
+        {/* <section className="bg-[#B3CFE5] text-[#0A1931] rounded-lg p-6 sm:p-8">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">
             {t("intro.economyLivelihood")}
           </h2>
@@ -291,7 +284,7 @@ export default function IntroductionPage() {
               </ul>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );

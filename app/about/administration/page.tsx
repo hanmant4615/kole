@@ -17,83 +17,86 @@ export default function AdministrationPage() {
 
   const electedMembers = [
     {
-      name: "श्री/श्रीमती राजेश पाटील / Mr./Mrs. Rajesh Patil",
-      position: "Sarpanch / सरपंच",
-      ward: "All Wards / सर्व वार्ड",
-      phone: "+91-XXXXX-XXXXX",
-      email: "sarpanch@grampanchayat.gov.in",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      name: "श्री/श्रीमती सुनिता देशमुख / Mr./Mrs. Sunita Deshmukh",
-      position: "Up-Sarpanch / उपसरपंच",
-      ward: "All Wards / सर्व वार्ड",
-      phone: "+91-XXXXX-XXXXX",
-      email: "upsarpanch@grampanchayat.gov.in",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      name: "श्री अनिल शर्मा / Mr. Anil Sharma",
+      id: 1,
+      MarathiName: "श्री. अक्षय बापुसाहेब कांबळे",
+      EnglishName: "Mr. Akshay Bapusaheb Kamble",
+      positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      ward: "Ward 1 / वार्ड 1",
-      phone: "+91-XXXXX-XXXXX",
-      email: "ward1@grampanchayat.gov.in",
-      image: "https://via.placeholder.com/150",
+      image: "/images/official3.jpg",
+      phone: "+91-9881266379",
+      phoneDevnagari: "+९१-९८८१२६६३७९",
     },
     {
-      name: "श्रीमती मीना कुमार / Mrs. Meena Kumar",
+      id: 2,
+      MarathiName: "सौ. रुपाली प्रकाश कोळेकर ",
+      EnglishName: "Mrs. Rupali Prakash Kolekar",
+      positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      ward: "Ward 2 / वार्ड 2",
-      phone: "+91-XXXXX-XXXXX",
-      email: "ward2@grampanchayat.gov.in",
-      image: "https://via.placeholder.com/150",
+      image: "/images/official3.jpg",
+      phone: "+91-9975149589",
+      phoneDevnagari: "+९१-९९७५१४९५८९",
     },
     {
-      name: "श्री विकास जाधव / Mr. Vikas Jadhav",
+      id: 3,
+      MarathiName: "सौ. पुष्पा जितेंद्र डुबल",
+      EnglishName: "Mrs. Pushpa Jitendra Dubal",
+      positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      ward: "Ward 3 / वार्ड 3",
-      phone: "+91-XXXXX-XXXXX",
-      email: "ward3@grampanchayat.gov.in",
-      image: "https://via.placeholder.com/150",
+      image: "/images/official3.jpg",
+      phone: "+91-8999008001",
+      phoneDevnagari: "+९१-८९९९००८००१",
     },
     {
-      name: "श्रीमती प्रिया वर्मा / Mrs. Priya Verma",
+      id: 4,
+      MarathiName: "सौ. विनाली सिद्धार्थ कांबळे",
+      EnglishName: "Mrs. Vinali Siddharth Kamble",
+      positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      ward: "Ward 4 / वार्ड 4",
-      phone: "+91-XXXXX-XXXXX",
-      email: "ward4@grampanchayat.gov.in",
-      image: "https://via.placeholder.com/150",
+      image: "/images/official3.jpg",
+      phone: "+91-7620974833",
+      phoneDevnagari: "+९१-७६२०९७४८३३",
+    },
+    {
+      id: 5,
+      MarathiName: "श्री. विश्वास आण्णा पारवे",
+      EnglishName: "Mr. Vishwas Anna Parve",
+      positionKey: "officials.member",
+      position: "Ward Member / वार्ड सदस्य",
+      image: "/images/official3.jpg",
+      phone: "+91-9881351002",
+      phoneDevnagari: "+९१-९८८१३५१००२",
+    },
+    {
+      id: 6,
+      MarathiName: "सौ. शैलजा संजय कोळेकर",
+      EnglishName: "Mrs. Shailaja Sanjay Kolekar",
+      positionKey: "officials.member",
+      position: "Ward Member / वार्ड सदस्य",
+      image: "/images/official3.jpg",
+      phone: "+91-7263032571",
+      phoneDevnagari: "+९१-७२६३०३२५७१",
     },
   ];
 
   const administrativeStaff = [
     {
-      name: "श्री रमेश कुलकर्णी / Mr. Ramesh Kulkarni",
-      position: "Gram Sevak / ग्राम सेवक",
-      department: "Administration / प्रशासन",
-      phone: "+91-XXXXX-XXXXX",
-      email: "gramsevak@grampanchayat.gov.in",
+      id: 7,
+      MarathiName: "संतोष भिमराव पाटील",
+      EnglishName: "Santosh Bhimrao Patil",
+      position: "पोलीस पाटील /Police Patil",
+      image: "/images/official3.jpg",
+      phone: "+91-9270001001",
+      phoneDevnagari: "+९१-९२७०००१००१",
     },
     {
-      name: "श्रीमती स्मिता राणे / Mrs. Smita Rane",
-      position: "Secretary / सचिव",
-      department: "Administration / प्रशासन",
-      phone: "+91-XXXXX-XXXXX",
-      email: "secretary@grampanchayat.gov.in",
-    },
-    {
-      name: "श्री संदीप पवार / Mr. Sandeep Pawar",
-      position: "Accountant / लेखापाल",
-      department: "Finance / वित्त",
-      phone: "+91-XXXXX-XXXXX",
-      email: "accountant@grampanchayat.gov.in",
-    },
-    {
-      name: "श्रीमती अनिता भोसले / Mrs. Anita Bhosale",
-      position: "Health Worker / आरोग्य कार्यकर्ता",
-      department: "Health / आरोग्य",
-      phone: "+91-XXXXX-XXXXX",
-      email: "health@grampanchayat.gov.in",
+      id: 8,
+      MarathiName: "संतोष जयवंत जगताप ",
+      EnglishName: "Santosh Jaywant Jagtap",
+      position:
+        "तंटामुक्ती अध्यक्ष / President, Dispute-Free Village Committee",
+      image: "/images/official3.jpg",
+      phone: "+91-9689845978",
+      phoneDevnagari: "+९१-९६८९८४५९७८",
     },
   ];
 
@@ -158,8 +161,10 @@ export default function AdministrationPage() {
                 <div className="bg-gradient-to-r from-government-blue to-government-green p-4 text-white text-center">
                   <div className="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-4 border-white">
                     <Image
-                      src={member.image}
-                      alt={member.name}
+                      src={"/images/gramsevak.jpeg"}
+                      alt={"member.name"}
+                      width={500}
+                      height={500}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -175,18 +180,24 @@ export default function AdministrationPage() {
                 </div>
                 <div className="p-6">
                   <h4 className="text-lg font-bold text-government-blue mb-2">
-                    {member.name}
+                    {language === "mr"
+                      ? member.MarathiName
+                      : member.EnglishName}
                   </h4>
-                  <p className="text-gray-600 text-sm mb-4">{member.ward}</p>
+                  {/* <p className="text-gray-600 text-sm mb-4">{member.ward}</p> */}
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-gray-700">
                       <FaPhoneAlt className="text-government-orange" />
-                      <span>{member.phone}</span>
+                      <span>
+                        {language === "en"
+                          ? member.phone
+                          : member.phoneDevnagari}
+                      </span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-700">
-                      <FaEnvelope className="text-government-orange" />
-                      <span className="break-all">{member.email}</span>
-                    </div>
+                    {/* <div className="flex items-center gap-2 text-sm text-gray-700"> */}
+                    {/* <FaEnvelope className="text-government-orange" /> */}
+                    {/* <span className="break-all">{member.email}</span> */}
+                    {/* </div> */}
                   </div>
                 </div>
               </div>
@@ -206,20 +217,22 @@ export default function AdministrationPage() {
                 className="border-l-4 border-government-orange pl-4 py-4 hover:bg-gray-50 transition-colors"
               >
                 <h3 className="text-lg sm:text-xl font-bold text-government-blue mb-2">
-                  {staff.name}
+                  {language === "en" ? staff.EnglishName : staff.MarathiName}
                 </h3>
                 <p className="text-government-orange font-semibold mb-1">
                   {staff.position}
                 </p>
-                <p className="text-gray-600 text-sm mb-3">{staff.department}</p>
+                <p className="text-gray-600 text-sm mb-3">
+                  {t(`${staff.position}`)}
+                </p>
                 <div className="space-y-1">
                   <div className="flex items-center gap-2 text-sm text-gray-700">
                     <FaPhoneAlt className="text-government-orange text-xs" />
                     <span>{staff.phone}</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-700">
-                    <FaEnvelope className="text-government-orange text-xs" />
-                    <span className="break-all">{staff.email}</span>
+                    {/* <FaEnvelope className="text-government-orange text-xs" /> */}
+                    {/* <span className="break-all">{staff.email}</span> */}
                   </div>
                 </div>
               </div>
@@ -228,7 +241,7 @@ export default function AdministrationPage() {
         </section>
 
         {/* Committees */}
-        <section className="mb-8">
+        {/* <section className="mb-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-government-blue mb-6">
             {t("admin.panchayatCommittees")}
           </h2>
@@ -263,10 +276,10 @@ export default function AdministrationPage() {
               );
             })}
           </div>
-        </section>
+        </section> */}
 
         {/* Governance Structure */}
-        <section className="bg-gradient-to-r from-government-orange to-government-green text-white rounded-lg p-6 sm:p-8">
+        <section className="bg-[#4A7FA7] text-white rounded-lg p-6 sm:p-8">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6">
             {t("admin.governanceStructure")}
           </h2>

@@ -33,7 +33,7 @@ const Footer = () => {
             <p className="text-navy-light text-sm leading-relaxed opacity-90">
               {t("footer.aboutText")}
             </p>
-            <div className="flex space-x-4 mt-4">
+            {/* <div className="flex space-x-4 mt-4">
               <a
                 href="#"
                 className="text-navy-light hover:text-navy-medium transition-colors"
@@ -58,7 +58,7 @@ const Footer = () => {
               >
                 <FaInstagram size={20} />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -185,10 +185,10 @@ const Footer = () => {
                   {t("header.district")}
                 </span>
               </li>
-              <li className="flex items-center space-x-2">
+              {/* <li className="flex items-center space-x-2">
                 <FaPhone className="text-navy-light rotate-90" />
                 <span className="text-gray-400">+91-XXX-XXXXXXX</span>
-              </li>
+              </li> */}
               <li className="flex items-center space-x-2">
                 <FaEnvelope className="text-navy-light" />
                 <span className="text-gray-400">kole9527@gmail.com</span>
@@ -199,10 +199,10 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-gray-800 text-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-gray-400 text-center md:text-left">
+            <div className="text-lg text-gray-400 text-center md:text-left">
               <p>{t("footer.copyright")}</p>
               <p className="mt-1">
                 {t("footer.content")}{" "}
@@ -210,7 +210,7 @@ const Footer = () => {
                   href="https://ascentaconsulting.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-navy-light hover:text-white"
+                  className="text-navy-light text-lg hover:text-white"
                 >
                   Ascenta consulting
                 </a>

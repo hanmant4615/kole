@@ -12,11 +12,15 @@ export const commonTranslations = {
   },
   "header.village": {
     mr: "ग्रामपंचायत कोळे",
-    en: "Kole Grampanchayat",
+    en: "Grampanchayat Kole",
   },
   "header.district": {
-    mr: "ता. वाळवा जि. सांगली",
-    en: "Tal. Walwa , Dist. Sangli ",
+    mr: "  जि. सांगली",
+    en: "  Dist. Sangli ",
+  },
+  "header.Taluka": {
+    mr: "ता. वाळवा",
+    en: "Tal. Walwa ",
   },
 
   // Navigation
@@ -167,8 +171,8 @@ export const commonTranslations = {
     en: "About Us",
   },
   "footer.aboutText": {
-    mr: "आम्ही नागरिकांना उत्तम सेवा प्रदान करण्यासाठी कटिबद्ध आहोत",
-    en: "We are committed to providing excellent services to citizens",
+    mr: "आमची ग्रामपंचायत पारदर्शक आणि कार्यक्षम सेवा देण्यासाठी कटिबद्ध आहे. लोकसहभागातून आणि चांगल्या प्रशासनातून गावाचा सर्वांगीण विकास आमचा उद्देश आहे.",
+    en: "Our Gram Panchayat is dedicated to serving the villagers with transparency and efficiency. We aim for the overall development of the village through good governance and active public participation.",
   },
   "footer.quickLinks": {
     mr: "द्रुत दुवे",
@@ -195,8 +199,8 @@ export const commonTranslations = {
     en: "Follow Us",
   },
   "footer.copyright": {
-    mr: "© 2025 ग्राम पंचायत.",
-    en: "© 2025 Gram Panchayat.",
+    mr: "© 2025 कोळे ग्रामपंचायत.",
+    en: "© 2025 Kole Grampanchayat.",
   },
   "footer.content": {
     mr: "सर्व आरक्षित",

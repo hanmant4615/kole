@@ -18,33 +18,34 @@ const Navigation = () => {
       hasDropdown: true,
       dropdownItems: [
         { nameKey: "nav.about.introduction", href: "/about/introduction" },
-        { nameKey: "nav.about.history", href: "/about/history" },
+        // { nameKey: "nav.about.history", href: "/about/history" },
         { nameKey: "nav.about.administration", href: "/about/administration" },
       ],
     },
-    {
-      nameKey: "nav.departments",
-      href: "/departments",
-      hasDropdown: true,
-      dropdownItems: [
-        {
-          nameKey: "nav.departments.agriculture",
-          href: "/departments/agriculture",
-        },
-        { nameKey: "nav.departments.health", href: "/departments/health" },
-        {
-          nameKey: "nav.departments.education",
-          href: "/departments/education",
-        },
-        {
-          nameKey: "nav.departments.social",
-          href: "/departments/social-welfare",
-        },
-      ],
-    },
-    { nameKey: "nav.schemes", href: "/schemes/local", hasDropdown: false },
-    { nameKey: "nav.services", href: "/services", hasDropdown: false },
-    { nameKey: "nav.news", href: "/news", hasDropdown: false },
+    // {
+    //   nameKey: "nav.departments",
+    //   href: "/departments",
+    //   hasDropdown: true,
+    //   dropdownItems: [
+    //     {
+    //       nameKey: "nav.departments.agriculture",
+    //       href: "/departments/agriculture",
+    //     },
+    //     { nameKey: "nav.departments.health", href: "/departments/health" },
+    //     {
+    //       nameKey: "nav.departments.education",
+    //       href: "/departments/education",
+    //     },
+    //     {
+    //       nameKey: "nav.departments.social",
+    //       href: "/departments/social-welfare",
+    //     },
+    //   ],
+    // },
+    { nameKey: "nav.departments", href: "/departments", hasDropdown: false },
+    // { nameKey: "nav.schemes", href: "/schemes/local", hasDropdown: false },
+    // { nameKey: "nav.services", href: "/services", hasDropdown: false },
+    // { nameKey: "nav.news", href: "/news", hasDropdown: false },
     { nameKey: "nav.gallery", href: "/gallery", hasDropdown: false },
     { nameKey: "nav.contact", href: "/contact", hasDropdown: false },
   ];

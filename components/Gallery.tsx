@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { FaImages } from "react-icons/fa";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Image from "next/image";
 
 const Gallery = () => {
   const { t } = useLanguage();
@@ -13,21 +14,25 @@ const Gallery = () => {
       id: 1,
       titleKey: "gallery.item1.title",
       categoryKey: "gallery.item1.category",
+      src: "/images/photo1.jpeg",
     },
     {
       id: 2,
       titleKey: "gallery.item2.title",
       categoryKey: "gallery.item2.category",
+      src: "/images/photo1.jpeg",
     },
     {
       id: 3,
       titleKey: "gallery.item3.title",
       categoryKey: "gallery.item3.category",
+      src: "/images/photo1.jpeg",
     },
     {
       id: 4,
       titleKey: "gallery.item4.title",
       categoryKey: "gallery.item4.category",
+      src: "/images/photo1.jpeg",
     },
     {
       id: 5,
@@ -56,7 +61,17 @@ const Gallery = () => {
                 className="group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-200"
               >
                 <div className="relative h-60 sm:h-72 md:h-80 lg:h-96 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center overflow-hidden">
-                  <FaImages className="text-6xl text-gray-400" />
+                  {image.src ? (
+                    <Image
+                      src={image.src}
+                      alt={t(image.titleKey)}
+                      width={150}
+                      height={150}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                  ) : (
+                    <FaImages className="text-6xl text-gray-400" />
+                  )}
                   <div className="absolute inset-0 bg-[#0A1931] bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-200"></div>
                 </div>
                 <div className="p-4 bg-white">

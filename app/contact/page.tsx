@@ -74,13 +74,14 @@ export default function ContactPage() {
                     {t("contact.address")}
                   </h3>
                   <p className="text-gray-700 text-sm sm:text-base">
-                    Gram Panchayat Office
+                    {t("header.village")} {t("footer.office")}
                     <br />
-                    Village Name, Taluka Name
+                    {t("header.Taluka")}
                     <br />
-                    District Name, Maharashtra
+                    {t("header.district")}
                     <br />
-                    PIN: 123456
+                    {language === "en" ? "Pincode : " : "पिनकोड : "}
+                    {language === "en" ? 415409 : "४१५४०९"}
                   </p>
                 </div>
               </div>
@@ -97,11 +98,8 @@ export default function ContactPage() {
                     {t("contact.phone")}
                   </h3>
                   <p className="text-gray-700 text-sm sm:text-base">
-                    Office: +91 1234 567 890
-                    <br />
-                    Sarpanch: +91 7066141001
-                    <br />
-                    Helpline: 1800-XXX-XXXX
+                    {language === "en" ? "Sarpanch: " : "सरपंच : "}
+                    {language === "en" ? "7066141001 " : "७०६६१४१००१ "}
                   </p>
                 </div>
               </div>
@@ -119,8 +117,6 @@ export default function ContactPage() {
                   </h3>
                   <p className="text-gray-700 text-sm sm:text-base break-all">
                     kole9527@gmail.com
-                    <br />
-                    sarpanch@grampanchayat.gov.in
                   </p>
                 </div>
               </div>
@@ -137,9 +133,9 @@ export default function ContactPage() {
                     {t("contact.officeHours")}
                   </h3>
                   <p className="text-gray-700 text-sm sm:text-base">
-                    Monday - Friday
+                    {t("contact.Working_Days")}
                     <br />
-                    सकाळी ९.४५ ते सं. ६.१५
+                    {t("contact.officeHoursValue")}
                     <br />
                     <span className="text-red-500 font-semibold">
                       {language === "mr"
@@ -152,7 +148,7 @@ export default function ContactPage() {
             </div>
 
             {/* Social Media */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            {/* <div className="bg-white rounded-lg shadow-lg p-6">
               <h3 className="font-bold text-government-blue mb-4 text-lg">
                 {t("contact.followUs")}
               </h3>
@@ -176,7 +172,7 @@ export default function ContactPage() {
                   <FaInstagram className="text-xl" />
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}
@@ -295,32 +291,29 @@ export default function ContactPage() {
                 </button>
               </form>
             </div>
-
-            {/* Map Section */}
-            <div className="mt-8 bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="p-4 sm:p-6 bg-[#0A1931] text-white">
-                <h3 className="text-xl sm:text-2xl font-bold">
-                  {t("contact.locationMap")}
-                </h3>
-              </div>
-              <div className="h-64 sm:h-96 bg-gray-200 flex items-center justify-center">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2133198478436!2d73.8567437!3d18.5204303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0704334e675%3A0x90e1e4ac2f2e29d4!2sMaharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1234567890"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="w-full h-full"
-                ></iframe>
-              </div>
+          </div>
+        </div>
+        {/* Map Section */}
+        <div className="w-full px-4 sm:px-6 lg:px-8 mt-8">
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="p-4 sm:p-6 bg-[#0A1931] text-white">
+              <h3 className="text-xl sm:text-2xl font-bold">
+                {t("contact.locationMap")}
+              </h3>
+            </div>
+            <div className="w-full aspect-[3/2] bg-gray-200 relative overflow-hidden">
+              <iframe
+                loading="lazy"
+                src="https://maps.google.com/maps?q=Kole%20Walwa%20Sangli%20Maharashtra&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"
+                title="Kole Walwa Sangli Maharashtra"
+                aria-label="Kole Walwa Sangli Maharashtra"
+                className="absolute top-0 left-0 w-full h-full border-0"
+              ></iframe>
             </div>
           </div>
         </div>
-
         {/* Emergency Contact */}
-        <div className="mt-8 bg-red-500 text-white rounded-lg p-6 sm:p-8">
+        {/* <div className="mt-8 bg-red-500 text-white rounded-lg p-6 sm:p-8">
           <div className="text-center">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">
               {t("contact.emergencyContact")}
@@ -334,7 +327,7 @@ export default function ContactPage() {
               <span>1800-XXX-XXXX ({t("contact.tollFree")})</span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );

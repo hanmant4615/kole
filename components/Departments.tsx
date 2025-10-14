@@ -10,6 +10,8 @@ import {
   FaHammer,
   FaUsers,
 } from "react-icons/fa";
+import { FaFileAlt, FaPaw } from "react-icons/fa";
+
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Departments = () => {
@@ -35,17 +37,17 @@ const Departments = () => {
     {
       id: 3,
       nameKey: "dept.animal_husbandry.name",
-      icon: FaGraduationCap,
+      icon: FaPaw,
       color: "from-blue-400 to-blue-600",
       descriptionKey: "dept.animal_husbandry.desc",
       link: "/departments/education",
     },
     {
       id: 4,
-      nameKey: "Village Revenue Officer",
-      icon: FaHammer,
+      nameKey: "dept.Village_Revenue_Officer",
+      icon: FaFileAlt,
       color: "from-yellow-400 to-yellow-600",
-      descriptionKey: "dept.construction.desc",
+      descriptionKey: "dept.Village_Revenue_Officer_des",
       link: "/departments",
     },
   ];
@@ -61,7 +63,7 @@ const Departments = () => {
             {departments.map((dept) => {
               const Icon = dept.icon;
               return (
-                <Link href={dept.link} key={dept.id}>
+                <Link href="/departments" key={dept.id}>
                   <div className="group cursor-pointer">
                     <div
                       className={`bg-gradient-to-br ${dept.color} text-white p-6 rounded-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1`}

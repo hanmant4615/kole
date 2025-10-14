@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
+import Link from "next/link";
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -11,20 +12,20 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
+      titleKey: "hero.title3",
+      descriptionKey: "hero.subtitle3",
+      image: "/images/hero1.jpg",
+    },
+    {
+      id: 2,
       titleKey: "hero.title1",
       descriptionKey: "hero.subtitle1",
       image: "/images/hero1.jpg",
     },
     {
-      id: 2,
+      id: 3,
       titleKey: "hero.title2",
       descriptionKey: "hero.subtitle2",
-      image: "/images/hero1.jpg",
-    },
-    {
-      id: 3,
-      titleKey: "hero.title3",
-      descriptionKey: "hero.subtitle3",
       image: "/images/hero1.jpg",
     },
   ];
@@ -69,12 +70,16 @@ const Hero = () => {
             {t(slides[currentSlide].descriptionKey)}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
-            <button className="bg-[#0A1931] hover:bg-[#142b4a] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors duration-200 w-full sm:w-auto">
-              {t("hero.viewServices")}
-            </button>
-            <button className="bg-white hover:bg-gray-100 text-[#0A1931] px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors duration-200 w-full sm:w-auto">
-              {t("hero.contactUs")}
-            </button>
+            <Link href="/about">
+              <button className="bg-[#0A1931] hover:bg-[#142b4a] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors duration-200 w-full sm:w-auto">
+                {t("intro.title")}
+              </button>
+            </Link>
+            <Link href="/contact">
+              <button className="bg-white hover:bg-gray-100 text-[#0A1931] px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold transition-colors duration-200 w-full sm:w-auto">
+                {t("hero.contactUs")}
+              </button>
+            </Link>
           </div>
         </div>
       </div>

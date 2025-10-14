@@ -38,7 +38,7 @@ const Header = () => {
                 {t("header.village")}
               </h2>
               <p className="text-lg text-[#0A1931] marathi">
-                {t("header.district")}
+                {t("header.Taluka")} - {t("header.district")}
               </p>
             </div>
 
@@ -81,6 +81,7 @@ const Header = () => {
               {t("header.village")}
             </h2>
             <p className="text-base md:text-lg lg:text-xl text-[#0A1931] marathi transition-all duration-300">
+              {t("header.Taluka")}
               {t("header.district")}
             </p>
           </div>

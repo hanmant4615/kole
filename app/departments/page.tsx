@@ -10,6 +10,7 @@ import {
   FaUsers,
   FaArrowRight,
 } from "react-icons/fa";
+import { FaPaw } from "react-icons/fa";
 
 export default function DepartmentsPage() {
   const { t } = useLanguage();
@@ -19,32 +20,40 @@ export default function DepartmentsPage() {
       nameKey: "dept.agriculture",
       name: t("dept.agriculture.name"),
       description: t("dept.agriculture.fullDesc"),
+      head: t("dept.agriculture.departmentHead"),
+      phone: t("dept.agriculture.departmentHeadPhone"),
       icon: FaSeedling,
-      link: "/departments/agriculture",
+      // link: "/departments/agriculture",
       color: "from-green-400 to-green-600",
     },
     {
       nameKey: "dept.health",
       name: t("dept.health.name"),
       description: t("dept.health.fullDesc"),
+      head: t("dept.health.departmentHead"),
+      phone: t("dept.health.departmentHeadPhone"),
       icon: FaHeartbeat,
-      link: "/departments/health",
+      // link: "/departments/health",
       color: "from-red-400 to-red-600",
     },
     {
       nameKey: "dept.education",
-      name: t("dept.education.name"),
+      name: t("dept.animal_husbandry.name"),
       description: t("dept.education.fullDesc"),
-      icon: FaGraduationCap,
-      link: "/departments/education",
+      head: t("dept.animal_husbandry.departmentHead"),
+      phone: t("dept.animal_husbandry.departmentHeadPhone"),
+      icon: FaPaw,
+      // link: "/departments/education",
       color: "from-blue-400 to-blue-600",
     },
     {
-      nameKey: "dept.social",
-      name: t("dept.social.name"),
-      description: t("dept.social.fullDesc"),
+      nameKey: "dept.Village_Revenue_Officer",
+      name: t("dept.Village_Revenue_Officer"),
+      description: t("dept.Village_Revenue_Officer_des"),
+      head: t("dept.Village_Revenue_OfficerHead"),
+      phone: t("dept.Village_Revenue_OfficerHeadPhone"),
       icon: FaUsers,
-      link: "/departments/social-welfare",
+      // link: "/departments/social-welfare",
       color: "from-purple-400 to-purple-600",
     },
   ];
@@ -71,7 +80,7 @@ export default function DepartmentsPage() {
             {subPages.map((dept, index) => {
               const Icon = dept.icon;
               return (
-                <Link href={dept.link} key={index}>
+                <Link href="/departments" key={index}>
                   <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer h-full">
                     <div
                       className={`bg-gradient-to-br ${dept.color} p-6 sm:p-8 text-white`}
@@ -82,15 +91,26 @@ export default function DepartmentsPage() {
                       </h3>
                     </div>
                     <div className="p-6">
-                      <p className="text-gray-700 text-sm sm:text-base mb-4">
+                      <p className="text-gray-700 text-sm sm:text-base">
                         {dept.description}
                       </p>
-                      <div className="flex items-center text-government-orange font-semibold">
+
+                      {/* view departments */}
+
+                      {/* <div className="flex items-center text-government-orange font-semibold">
                         <span className="mr-2">
                           {t("common.viewDepartment")}
                         </span>
                         <FaArrowRight />
-                      </div>
+                      </div> */}
+                    </div>
+                    <div className="p-6">
+                      <p className="text-gray-700 text-lg sm:text-base">
+                        {t("dept.departmentHeadtitle")} - {dept.head}
+                      </p>
+                      <p className="text-gray-700 text-lg sm:text-base">
+                        {t("common.phone")} - {dept.phone}
+                      </p>
                     </div>
                   </div>
                 </Link>
@@ -100,7 +120,7 @@ export default function DepartmentsPage() {
         </div>
 
         {/* Office Hours */}
-        <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8">
+        {/* <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-government-blue mb-6">
             {t("common.officeHours")}
           </h2>
@@ -128,7 +148,7 @@ export default function DepartmentsPage() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );

@@ -24,13 +24,13 @@ export default function AboutPage() {
       link: "/about/introduction",
       color: "from-blue-400 to-blue-600",
     },
-    {
-      title: t("nav.about.history"),
-      description: t("about.history.description"),
-      icon: FaHistory,
-      link: "/about/history",
-      color: "from-green-400 to-green-600",
-    },
+    // {
+    //   title: t("nav.about.history"),
+    //   description: t("about.history.description"),
+    //   icon: FaHistory,
+    //   link: "/about/history",
+    //   color: "from-green-400 to-green-600",
+    // },
     {
       title: t("nav.about.administration"),
       description: t("about.admin.description"),
@@ -103,7 +103,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               <div className="bg-government-orange bg-opacity-10 p-4 rounded-lg text-center">
                 <h3 className="text-2xl sm:text-3xl font-bold text-government-orange">
-                  5000+
+                  728
                 </h3>
                 <p className="text-gray-700 text-sm sm:text-base">
                   {t("common.population")}
@@ -111,34 +111,34 @@ export default function AboutPage() {
               </div>
               <div className="bg-government-green bg-opacity-10 p-4 rounded-lg text-center">
                 <h3 className="text-2xl sm:text-3xl font-bold text-government-green">
-                  1500
+                  130
                 </h3>
                 <p className="text-gray-700 text-sm sm:text-base">
                   {t("common.households")}
                 </p>
               </div>
-              <div className="bg-[#0A1931] bg-opacity-10 p-4 rounded-lg text-center">
+              {/* <div className="bg-[#0A1931] bg-opacity-10 p-4 rounded-lg text-center">
                 <h3 className="text-2xl sm:text-3xl font-bold text-government-blue">
                   500
                 </h3>
                 <p className="text-gray-700 text-sm sm:text-base">
                   {t("common.hectares")}
                 </p>
-              </div>
-              <div className="bg-orange-600 bg-opacity-10 p-4 rounded-lg text-center">
+              </div> */}
+              {/* <div className="bg-orange-600 bg-opacity-10 p-4 rounded-lg text-center">
                 <h3 className="text-2xl sm:text-3xl font-bold text-orange-600">
                   15+
                 </h3>
                 <p className="text-gray-700 text-sm sm:text-base">
                   {t("common.awards")}
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
 
         {/* History Section */}
-        <section className="bg-white rounded-lg shadow-lg p-6 sm:p-8 mb-8">
+        {/* <section className="bg-white rounded-lg shadow-lg p-6 sm:p-8 mb-8">
           <div className="flex items-center mb-6">
             <FaHistory className="text-4xl sm:text-5xl text-government-green mr-4" />
             <h2 className="text-2xl sm:text-3xl font-bold text-government-blue">
@@ -163,7 +163,7 @@ export default function AboutPage() {
               </ul>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Administration Section */}
         <section className="bg-white rounded-lg shadow-lg p-6 sm:p-8 mb-8">
@@ -205,7 +205,7 @@ export default function AboutPage() {
         </section>
 
         {/* Vision & Mission */}
-        <section className="bg-[#B3CFE5] text-[#0A1931] rounded-lg p-6 sm:p-8">
+        {/* <section className="bg-[#B3CFE5] text-[#0A1931] rounded-lg p-6 sm:p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <FaAward className="text-4xl sm:text-5xl mb-4" />
@@ -226,7 +226,7 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </main>
   );

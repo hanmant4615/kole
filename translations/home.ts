@@ -119,12 +119,12 @@ export const homeTranslations = {
     en: "Online services and information easily available",
   },
   "hero.title3": {
-    mr: "स्वच्छ आणि हरित गाव",
-    en: "Clean and Green Village",
+    mr: "ग्रामपंचायत कोळे मध्ये आपले स्वागत!",
+    en: "Welcome to Grampanchayat Kole ",
   },
   "hero.subtitle3": {
-    mr: "पर्यावरण संवर्धन आणि स्वच्छता हे आमचे ध्येय",
-    en: "Environmental conservation and cleanliness are our goals",
+    mr: "पारदर्शकता, तंत्रज्ञान आणि लोकसहभागाद्वारे गावाचा सर्वांगीण विकास.",
+    en: "Empowering our village through transparency, technology and community participation.",
   },
   "hero.viewServices": {
     mr: "सेवा पहा",

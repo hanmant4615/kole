@@ -15,92 +15,37 @@ export default function GalleryPage() {
     { id: "development", nameKey: "gallery.development" },
     { id: "schemes", nameKey: "gallery.schemes" },
     { id: "festivals", nameKey: "gallery.festivals" },
+    { id: "office", nameKey: "gallery.officeTitle" },
   ];
 
   const images = [
     {
       id: 1,
-      category: "events",
-      titleKey: "gallery.republicDay2024",
-      date: "26 Jan 2024",
-      src: "https://images.unsplash.com/photo-1611329532752-8f0f81e0be1a?w=800",
+      category: "office",
+      titleKey: "gallery.office",
+      date: "14 Oct 2025",
+      src: "/images/photo1.jpeg",
     },
     {
       id: 2,
-      category: "development",
-      titleKey: "gallery.communityHall",
-      date: "15 Dec 2024",
-      src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800",
+      category: "office",
+      titleKey: "gallery.GrampanchayatHall",
+      date: "4 Mar 2024",
+      src: "/images/photo2.jpeg",
     },
     {
       id: 3,
-      category: "schemes",
-      titleKey: "gallery.pmAwasDistribution",
-      date: "10 Nov 2024",
-      src: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800",
+      category: "office",
+      titleKey: "gallery.office",
+      date: "14 Oct 2025",
+      src: "/images/photo3.jpeg",
     },
     {
       id: 4,
       category: "festivals",
-      titleKey: "gallery.ganeshFestival",
+      titleKey: "gallery.Shivaji_MaharajFestival",
       date: "19 Sep 2024",
-      src: "https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?w=800",
-    },
-    {
-      id: 5,
-      category: "development",
-      titleKey: "gallery.roadDevelopment",
-      date: "5 Oct 2024",
-      src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800",
-    },
-    {
-      id: 6,
-      category: "events",
-      titleKey: "gallery.farmersTraining",
-      date: "20 Aug 2024",
-      src: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800",
-    },
-    {
-      id: 7,
-      category: "schemes",
-      titleKey: "gallery.healthCamp",
-      date: "15 Jul 2024",
-      src: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800",
-    },
-    {
-      id: 8,
-      category: "festivals",
-      titleKey: "gallery.independenceDay2024",
-      date: "15 Aug 2024",
-      src: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800",
-    },
-    {
-      id: 9,
-      category: "development",
-      titleKey: "gallery.solarLights",
-      date: "1 Jun 2024",
-      src: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800",
-    },
-    {
-      id: 10,
-      category: "events",
-      titleKey: "gallery.womenEmpowerment",
-      date: "8 Mar 2024",
-      src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800",
-    },
-    {
-      id: 11,
-      category: "schemes",
-      titleKey: "gallery.swachhBharat",
-      date: "2 Oct 2024",
-      src: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=800",
-    },
-    {
-      id: 12,
-      category: "festivals",
-      titleKey: "gallery.diwali",
-      date: "12 Nov 2024",
-      src: "https://images.unsplash.com/photo-1604168476729-17a5cb0e3e9c?w=800",
+      src: "/images/photo4.jpeg",
     },
   ];
 
@@ -160,6 +105,15 @@ export default function GalleryPage() {
               {t("gallery.festivals")}
             </p>
           </div>
+          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 text-center">
+            <FaImage className="text-3xl sm:text-4xl text-government-orange mx-auto mb-2" />
+            <p className="text-2xl sm:text-3xl font-bold text-government-blue">
+              {images.filter((img) => img.category === "festivals").length}
+            </p>
+            <p className="text-xs sm:text-sm text-gray-600">
+              {t("gallery.office")}
+            </p>
+          </div>
         </div>
 
         {/* Category Filter */}
@@ -193,6 +147,8 @@ export default function GalleryPage() {
                 <Image
                   src={image.src}
                   alt={t(image.titleKey)}
+                  width={150}
+                  height={150}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
@@ -246,7 +202,7 @@ export default function GalleryPage() {
         )}
 
         {/* Upload Section */}
-        <div className="mt-12 bg-[#01A3D6] text-white rounded-lg p-6 sm:p-8">
+        {/* <div className="mt-12 bg-[#01A3D6] text-white rounded-lg p-6 sm:p-8">
           <div className="max-w-3xl mx-auto text-center">
             <FaImage className="text-5xl sm:text-6xl mx-auto mb-4" />
             <h2 className="text-2xl sm:text-3xl font-bold mb-4">
@@ -259,7 +215,7 @@ export default function GalleryPage() {
               {t("gallery.uploadPhotos")}
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );
