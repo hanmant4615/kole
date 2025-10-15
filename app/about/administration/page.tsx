@@ -10,6 +10,7 @@ import {
   FaBalanceScale,
   FaPhoneAlt,
   FaEnvelope,
+  FaUserCircle,
 } from "react-icons/fa";
 
 export default function AdministrationPage() {
@@ -22,7 +23,7 @@ export default function AdministrationPage() {
       EnglishName: "Mr. Akshay Bapusaheb Kamble",
       positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      image: "/images/official3.jpg",
+      // image: "/images/official3.jpg",
       phone: "+91-9881266379",
       phoneDevnagari: "+९१-९८८१२६६३७९",
     },
@@ -32,7 +33,7 @@ export default function AdministrationPage() {
       EnglishName: "Mrs. Rupali Prakash Kolekar",
       positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      image: "/images/official3.jpg",
+      // image: "/images/official3.jpg",
       phone: "+91-9975149589",
       phoneDevnagari: "+९१-९९७५१४९५८९",
     },
@@ -42,7 +43,7 @@ export default function AdministrationPage() {
       EnglishName: "Mrs. Pushpa Jitendra Dubal",
       positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      image: "/images/official3.jpg",
+      // image: "/images/official3.jpg",
       phone: "+91-8999008001",
       phoneDevnagari: "+९१-८९९९००८००१",
     },
@@ -52,7 +53,7 @@ export default function AdministrationPage() {
       EnglishName: "Mrs. Vinali Siddharth Kamble",
       positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      image: "/images/official3.jpg",
+      // image: "/images/official3.jpg",
       phone: "+91-7620974833",
       phoneDevnagari: "+९१-७६२०९७४८३३",
     },
@@ -62,7 +63,7 @@ export default function AdministrationPage() {
       EnglishName: "Mr. Vishwas Anna Parve",
       positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      image: "/images/official3.jpg",
+      // image: "/images/official3.jpg",
       phone: "+91-9881351002",
       phoneDevnagari: "+९१-९८८१३५१००२",
     },
@@ -72,7 +73,7 @@ export default function AdministrationPage() {
       EnglishName: "Mrs. Shailaja Sanjay Kolekar",
       positionKey: "officials.member",
       position: "Ward Member / वार्ड सदस्य",
-      image: "/images/official3.jpg",
+      // image: "/images/official3.jpg",
       phone: "+91-7263032571",
       phoneDevnagari: "+९१-७२६३०३२५७१",
     },
@@ -84,7 +85,7 @@ export default function AdministrationPage() {
       MarathiName: "संतोष भिमराव पाटील",
       EnglishName: "Santosh Bhimrao Patil",
       position: "पोलीस पाटील /Police Patil",
-      image: "/images/official3.jpg",
+      // image: "/images/official3.jpg",
       phone: "+91-9270001001",
       phoneDevnagari: "+९१-९२७०००१००१",
     },
@@ -94,7 +95,7 @@ export default function AdministrationPage() {
       EnglishName: "Santosh Jaywant Jagtap",
       position:
         "तंटामुक्ती अध्यक्ष / President, Dispute-Free Village Committee",
-      image: "/images/official3.jpg",
+      // image: "/images/official3.jpg",
       phone: "+91-9689845978",
       phoneDevnagari: "+९१-९६८९८४५९७८",
     },
@@ -160,13 +161,7 @@ export default function AdministrationPage() {
               >
                 <div className="bg-gradient-to-r from-government-blue to-government-green p-4 text-white text-center">
                   <div className="w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden border-4 border-white">
-                    <Image
-                      src={"/images/gramsevak.jpeg"}
-                      alt={"member.name"}
-                      width={500}
-                      height={500}
-                      className="w-full h-full object-cover"
-                    />
+                    <FaUserCircle />
                   </div>
                   <h3 className="text-lg sm:text-xl font-bold">
                     {language === "mr"
@@ -228,7 +223,9 @@ export default function AdministrationPage() {
                 <div className="space-y-1">
                   <div className="flex items-center gap-2 text-sm text-gray-700">
                     <FaPhoneAlt className="text-government-orange text-xs" />
-                    <span>{staff.phone}</span>
+                    <span>
+                      {language === "en" ? staff.phone : staff.phoneDevnagari}
+                    </span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-gray-700">
                     {/* <FaEnvelope className="text-government-orange text-xs" /> */}
