@@ -101,7 +101,7 @@ const Officials = () => {
                   href="/admin"
                   className="inline-block bg-[#0A1931] hover:bg-[#142b4a] text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200"
                 >
-                  More
+                  Click here <span className="inner">More details</span>
                 </a>
               </div>
             </Link>
